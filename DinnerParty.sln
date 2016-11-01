@@ -1,9 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinnerParty", "DinnerParty\DinnerParty.csproj", "{D56A7656-E3F2-4105-AD46-63C0633BDCD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "PartyTests\UnitTests.csproj", "{9CC298DD-09C9-4E26-8EBC-9CF5650822DD}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D56A7656-E3F2-4105-AD46-63C0633BDCD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56A7656-E3F2-4105-AD46-63C0633BDCD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56A7656-E3F2-4105-AD46-63C0633BDCD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56A7656-E3F2-4105-AD46-63C0633BDCD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC298DD-09C9-4E26-8EBC-9CF5650822DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC298DD-09C9-4E26-8EBC-9CF5650822DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC298DD-09C9-4E26-8EBC-9CF5650822DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC298DD-09C9-4E26-8EBC-9CF5650822DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

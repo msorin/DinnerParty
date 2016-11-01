@@ -9,7 +9,9 @@ namespace DinnerParty
 
         public bool IsMarriedLookingAtUnmarried()
         {
-            return People.Any(x => x.IsMarried && !x.LookingAt.IsMarried);
+            return People.Any(x => x.IsMarried && 
+                    x.LookingAt != null && 
+                    !x.LookingAt.IsMarried);
         }
     }
 }

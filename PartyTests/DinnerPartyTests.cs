@@ -9,7 +9,11 @@ namespace UnitTests
     [TestClass]
     public class DinnerPartyTests
     {
-
+        /// <summary>
+        /// Retrieve a party with the attendies: Alice (married, looking at Bob), Bob (unknown, looking at Carol), and Carol (not married, looking at Alice)
+        /// </summary>
+        /// <param name="isBobMarried">Pass in a value to assign to Bob's status</param>
+        /// <returns></returns>
         public Party GetParty(bool isBobMarried)
         {
             var Alice = new Person
@@ -43,7 +47,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void TestHowIrrelevantBobIsToTheQuestion()
+        public void TestHowRelevantBobsMarriageIs()
         {
             var statuses = new List<bool> { true, false };
             statuses.ForEach(s =>

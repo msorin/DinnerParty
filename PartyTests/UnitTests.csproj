@@ -54,7 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\TheMovingGoalPost\Other\TestArea\DinnerParty\DinnerParty.csproj">
+    <ProjectReference Include="..\DinnerParty\DinnerParty.csproj">
       <Project>{d56a7656-e3f2-4105-ad46-63c0633bdcd7}</Project>
       <Name>DinnerParty</Name>
     </ProjectReference>
