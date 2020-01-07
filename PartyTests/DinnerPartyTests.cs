@@ -3,8 +3,10 @@ using NUnit.Framework;
 using System;
 
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace UnitTests.Tests
+namespace UnitTests
 {
 
     public class DinnerPartyTests
@@ -51,6 +53,15 @@ namespace UnitTests.Tests
         public bool HowRelevantBobsIsMarriageTest(bool isBobMarried)
         {
             return GetParty(isBobMarried).IsMarriedLookingAtUnmarried();
+        }
+
+        [Test]
+        public async Task AnotherTest()
+        {
+            await Task.Delay(100);
+
+            var party = GetParty(false);
+            Assert.IsFalse(party.People.First(x => x.Name == "Bob").IsMarried);
         }
     }
 }
