@@ -1,12 +1,12 @@
 ﻿using DinnerParty;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using System;
 
 using System.Collections.Generic;
 
-namespace UnitTests
+namespace UnitTests.Tests
 {
-    [TestClass]
+
     public class DinnerPartyTests
     {
         /// <summary>
@@ -46,14 +46,11 @@ namespace UnitTests
             return party;
         }
 
-        [TestMethod]
-        public void TestHowRelevantBobsMarriageIs()
+        [TestCase(false, ExpectedResult = true)]
+        [TestCase(true, ExpectedResult = true)]
+        public bool HowRelevantBobsIsMarriageTest(bool isBobMarried)
         {
-            var statuses = new List<bool> { true, false };
-            statuses.ForEach(s =>
-            {
-                Assert.IsTrue(GetParty(s).IsMarriedLookingAtUnmarried());
-            });
+            return GetParty(isBobMarried).IsMarriedLookingAtUnmarried();
         }
     }
 }
