@@ -5,6 +5,7 @@ using NUnit.Framework;
 
 namespace HttpTests
 {
+    [Explicit]
     public class HttpTests
     {
         HttpClient _client;
